@@ -227,7 +227,10 @@ static NSString * const kSFIdentityDataPropertyKey            = @"com.salesforce
         return;
     }
     
-    SFIdentityData *idData = [[SFIdentityData alloc] initWithJsonDict:idJsonData];
+    NSMutableDictionary *cleanedIdData = [NSMutableDictionary dictionaryWithDictionary:idJsonData];
+    [cleanedIdData removeObjectForKey:@"mobile_policy"];
+    
+    SFIdentityData *idData = [[SFIdentityData alloc] initWithJsonDict:cleanedIdData];
     self.idData = idData;
     
     [self notifyDelegateOfSuccess];
