@@ -33,7 +33,7 @@ NSString * const kSFOAuthServiceAccess          = @"com.salesforce.oauth.access"
 NSString * const kSFOAuthServiceRefresh         = @"com.salesforce.oauth.refresh";
 NSString * const kSFOAuthServiceActivation      = @"com.salesforce.oauth.activation";
 
-static NSString * const kSFOAuthDefaultDomain          = @"login.salesforce.com";
+static NSString * const kSFOAuthDefaultDomain          = @"proximityinsight.cloudforce.com";
 
 static NSString * const kSFOAuthClusterImplementationKey = @"SFOAuthClusterImplementation";
 
